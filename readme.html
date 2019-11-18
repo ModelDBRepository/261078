@@ -1,0 +1,20 @@
+<html>
+<p>This is the readme for the model file associated with the paper:
+</p><p>Hoshino O, Kameno, R, Watanabe K (2019) Reducing variability in motor cortex activity at a resting state by extracellular GABA for reliable perceptual decision-making. J Comput Neurosci
+</p><p>This c-program was contributed by O Hoshino. It was originally built using Microsoft Visual C++ and also works in Microsoft Visual Studio 2012 (create a new project, add the c file to it, and build and run).
+</p><p>More usage instructions:
+</p><ol>
+  <li>Set input current to the sensory network by giving a proper value to "int_inp0_3". "onset_0" and "period_0" define its onset time and duration.
+  </li><li>Set times for output data by giving values "OUT" (starting time) and "PERIOD" (recording time-period).
+  </li><li>Run. The default (as provided) settings of the model is for figure 2A.
+  </li><li>Output data files (***.dat) give membrane potentials of pyramidal cells (and local GABA concentrations in N_S that are kept at the basal level).</li></ol>
+<p>20191118: Note from ModelDB administrator: The web page
+<a href="https://www.cs.auckland.ac.nz/~paul/C/Windows">https://www.cs.auckland.ac.nz/~paul/C/Windows</a> has a recipe for
+installing the <b>free</b> Visual Studio Community 2017 (applicable to the 2019 version):
+<a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a><p/>
+After installed, start the Visual Studio power shell in the start menu. Change directory to this expanded archive's folder, then compile and run by typing:
+</p><p>cl /W4 .\ASMAfmd6.c<br/>
+.\ASMAfMD6.exe
+</p><p>(takes a few minutes to run) A matlab data file reader (type "file_reader" on the matlab command prompt) provides a sample plot of output traces from selected basket cells:<p/>
+  <img src="./screenshot.png" alt="screenshot" width="600">
+</html>
